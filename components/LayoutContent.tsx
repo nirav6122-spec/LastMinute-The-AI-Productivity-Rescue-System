@@ -26,7 +26,7 @@ export function LayoutContent({ children }: { children: React.ReactNode }) {
           <div className="w-10 h-10 bg-indigo-600 rounded-xl flex items-center justify-center text-white shadow-lg shadow-indigo-200">
             <Zap className="w-6 h-6" />
           </div>
-          <span className="text-xl font-bold tracking-tight text-slate-900">LastMinute</span>
+          <span className="text-xl font-bold tracking-tight text-slate-900">LastMinute – The AI Productivity Rescue System</span>
         </div>
         
         <nav className="mt-4 flex-1 px-4 space-y-1">

@@ -1,5 +1,5 @@
 {
-  "name": "LastMinute",
+  "name": "LastMinute – The AI Productivity Rescue System",
   "description": "AI-powered productivity web app that helps users avoid missing deadlines with smart task management and Google Calendar sync.",
   "requestFramePermissions": [
     "microphone"

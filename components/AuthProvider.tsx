@@ -99,7 +99,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
           <div className="w-16 h-16 bg-indigo-100 text-indigo-600 rounded-full flex items-center justify-center mx-auto mb-6">
             <LogIn size={32} />
           </div>
-          <h1 className="text-2xl font-bold text-slate-900 mb-2">Welcome to LastMinute</h1>
+          <h1 className="text-2xl font-bold text-slate-900 mb-2">Welcome to LastMinute – The AI Productivity Rescue System</h1>
           <p className="text-slate-500 mb-8">Please sign in to manage your tasks, schedule, and productivity.</p>
           <div className="flex flex-col gap-3">
             <button
