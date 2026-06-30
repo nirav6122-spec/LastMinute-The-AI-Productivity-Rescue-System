@@ -1,0 +1,26 @@
+{
+  "entities": {
+    "Task": {
+      "title": "Task",
+      "description": "A user's task",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string" },
+        "title": { "type": "string" },
+        "priority": { "type": "string", "enum": ["High", "Medium", "Low"] },
+        "due": { "type": "string" },
+        "aiRec": { "type": "string" },
+        "completed": { "type": "boolean" },
+        "createdAt": { "type": "number" },
+        "updatedAt": { "type": "number" }
+      },
+      "required": ["userId", "title", "priority", "due", "aiRec", "completed", "createdAt", "updatedAt"]
+    }
+  },
+  "firestore": {
+    "users/{userId}/tasks/{taskId}": {
+      "schema": { "$ref": "#/entities/Task" },
+      "description": "User tasks"
+    }
+  }
+}

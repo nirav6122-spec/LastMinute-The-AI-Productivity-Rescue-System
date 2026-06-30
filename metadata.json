@@ -1,0 +1,10 @@
+{
+  "name": "LastMinute",
+  "description": "AI-powered productivity web app that helps users avoid missing deadlines with smart task management and Google Calendar sync.",
+  "requestFramePermissions": [
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
