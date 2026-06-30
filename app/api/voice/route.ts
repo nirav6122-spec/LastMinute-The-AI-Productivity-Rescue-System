@@ -12,8 +12,8 @@ export async function POST(req: NextRequest) {
     const apiKey = process.env.GEMINI_API_KEY;
     if (!apiKey) {
       return NextResponse.json(
-        { error: "Gemini API Key is missing. Please configure GEMINI_API_KEY in the Secrets panel in Settings." },
-        { status: 500 }
+        { error: "Gemini API Key is missing. Please configure GEMINI_API_KEY in the Secrets panel in Settings to use the Voice Assistant." },
+        { status: 200 }
       );
     }
 

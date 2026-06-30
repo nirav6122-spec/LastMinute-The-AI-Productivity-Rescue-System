@@ -90,7 +90,7 @@ export default function Page() {
           await addTask(data.task.title, 'Other', data.task.priority, data.task.due, data.task.aiRec);
           setTranscript(`Added: ${data.task.title}`);
         } else {
-          setTranscript('Could not understand task.');
+          setTranscript(data.error || 'Could not understand task.');
         }
       } catch (err) {
         console.error(err);

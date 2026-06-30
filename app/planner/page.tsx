@@ -25,12 +25,12 @@ export default function PlannerPage() {
   }, [user]);
 
   const generatePlan = async () => {
-    if (!token || tasks.length === 0) return;
+    if (tasks.length === 0) return;
     setAnalyzing(true);
     try {
       const res = await fetch('/api/planner', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${token}` },
+        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ tasks })
       });
       const data = await res.json();
